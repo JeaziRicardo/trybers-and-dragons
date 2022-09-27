@@ -54,6 +54,9 @@ export default class Character {
   }
 
   get energy(): Energy {
-    return this._energy;
+    return {
+      type_: this._energy.type_,
+      amount: this._energy.amount,
+    };
   }
 }
